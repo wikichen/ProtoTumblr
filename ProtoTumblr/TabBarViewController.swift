@@ -13,6 +13,8 @@ class TabBarViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var buttons: [UIButton]!
     
+    @IBOutlet weak var bubbleImageView: UIImageView!
+    
     var homeViewController: UIViewController!
     var searchViewController: UIViewController!
     var accountViewController: UIViewController!
@@ -20,6 +22,7 @@ class TabBarViewController: UIViewController {
     
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
+    var bubbleInitialCenter: CGPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +36,11 @@ class TabBarViewController: UIViewController {
         
         viewControllers = [homeViewController, searchViewController, accountViewController, trendingViewController]
         
+        bubbleInitialCenter = bubbleImageView.center
+        
         buttons[selectedIndex].selected = true
         onTabBarButtonTap(buttons[selectedIndex])
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,7 +55,20 @@ class TabBarViewController: UIViewController {
         selectedIndex = sender.tag
         print(sender.tag)
         
+        
         buttons[previousIndex].selected = false
+        
+        // animate bubble
+
+        if selectedIndex == 1 {
+            UIView.animateWithDuration(0.1, animations: {
+                self.bubbleImageView.alpha = 0
+            })
+        } else {
+            UIView.animateWithDuration(1.2, delay: 0, options: [.Autoreverse, .Repeat, .CurveEaseInOut], animations: {
+                    self.bubbleImageView.center.y = self.bubbleInitialCenter.y - 5
+                }, completion: nil)
+        }
         
         let previousVC = viewControllers[previousIndex]
         previousVC.willMoveToParentViewController(nil)
