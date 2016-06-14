@@ -17,7 +17,7 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aBQ-2E-q4z">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aBQ-2E-q4z" userLabel="Trending Button">
                                         <rect key="frame" x="263" y="4" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="trending_icon"/>
@@ -26,25 +26,26 @@
                                             <action selector="onTabBarButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JXT-S6-Cqy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fMY-62-6i1">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fMY-62-6i1" userLabel="Account Button">
                                         <rect key="frame" x="207" y="4" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="account_icon"/>
+                                        <state key="normal" image="account_icon">
+                                            <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <state key="selected" image="account_selected_icon"/>
                                         <connections>
                                             <action selector="onTabBarButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yaZ-kE-Z1c"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ogf-Yu-8LG">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ogf-Yu-8LG" userLabel="Compose Button">
                                         <rect key="frame" x="134" y="4" width="52" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="compose_button"/>
                                         <connections>
-                                            <action selector="onTabBarButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="muO-bP-nrh"/>
                                             <segue destination="IcU-3Q-asQ" kind="modal" modalTransitionStyle="crossDissolve" id="aji-3h-TZi"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XnQ-Yr-pfe">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XnQ-Yr-pfe" userLabel="Search Button">
                                         <rect key="frame" x="78" y="5" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="search_icon"/>
@@ -53,7 +54,7 @@
                                             <action selector="onTabBarButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSL-iM-OYH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MHt-hy-Asa">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MHt-hy-Asa" userLabel="Home Button">
                                         <rect key="frame" x="22" y="5" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="home_icon"/>
@@ -77,7 +78,6 @@
                         <outlet property="contentView" destination="AYo-kx-wQU" id="tvI-2g-Ji8"/>
                         <outletCollection property="buttons" destination="MHt-hy-Asa" collectionClass="NSMutableArray" id="24V-GK-y6f"/>
                         <outletCollection property="buttons" destination="XnQ-Yr-pfe" collectionClass="NSMutableArray" id="Nu1-6s-KFd"/>
-                        <outletCollection property="buttons" destination="ogf-Yu-8LG" collectionClass="NSMutableArray" id="FaP-Bf-z0O"/>
                         <outletCollection property="buttons" destination="fMY-62-6i1" collectionClass="NSMutableArray" id="pVJ-cy-0Gh"/>
                         <outletCollection property="buttons" destination="aBQ-2E-q4z" collectionClass="NSMutableArray" id="b8z-FQ-KAC"/>
                     </connections>
