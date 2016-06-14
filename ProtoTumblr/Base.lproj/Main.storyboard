@@ -138,12 +138,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bPo-3M-JDb">
+                                <rect key="frame" x="0.0" y="515" width="320" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nevermind">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressCancelButton:" destination="IcU-3Q-asQ" eventType="touchUpInside" id="puZ-Ui-bbm"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" id="kCZ-Yj-Dym">
-                                <rect key="frame" x="8" y="81" width="305" height="251"/>
+                                <rect key="frame" x="8" y="122" width="305" height="251"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="link_icon" id="hxz-hA-2OR">
-                                        <rect key="frame" x="20" y="135" width="75" height="95"/>
+                                        <rect key="frame" x="20" y="155" width="75" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="photo_icon" id="nvK-cX-pFZ">
@@ -159,25 +169,15 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="video_icon" id="30I-0Q-1uL">
-                                        <rect key="frame" x="210" y="136" width="75" height="95"/>
+                                        <rect key="frame" x="210" y="156" width="75" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="chat_icon" id="CdU-BN-OwV">
-                                        <rect key="frame" x="115" y="135" width="75" height="96"/>
+                                        <rect key="frame" x="115" y="155" width="75" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bPo-3M-JDb">
-                                <rect key="frame" x="35" y="489" width="250" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Nevermind">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPressCancelButton:" destination="IcU-3Q-asQ" eventType="touchUpInside" id="puZ-Ui-bbm"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.19607843137254902" green="0.27450980392156865" blue="0.3529411764705882" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                     </view>
@@ -309,6 +309,7 @@
         <image name="home_spinner" width="146" height="146"/>
         <image name="link_icon" width="75" height="95"/>
         <image name="login_form" width="300" height="132"/>
+        <image name="nevermind" width="320" height="53"/>
         <image name="photo_icon" width="75" height="95"/>
         <image name="quote_icon" width="75" height="96"/>
         <image name="search_feed" width="320" height="524"/>
