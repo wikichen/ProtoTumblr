@@ -14,6 +14,8 @@
 		7C1712471D0D14A000A80950 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1712461D0D14A000A80950 /* AccountViewController.swift */; };
 		7C1712491D0D152C00A80950 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1712481D0D152C00A80950 /* TrendingViewController.swift */; };
 		7CC800661D0FA2140039DA16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC800651D0FA2140039DA16 /* LoginViewController.swift */; };
+		7CC800691D1041390039DA16 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC800671D1041390039DA16 /* BaseTransition.swift */; };
+		7CC8006A1D1041390039DA16 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC800681D1041390039DA16 /* FadeTransition.swift */; };
 		7CE2E7011D06347F00231827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2E7001D06347F00231827 /* AppDelegate.swift */; };
 		7CE2E7031D06347F00231827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2E7021D06347F00231827 /* ViewController.swift */; };
 		7CE2E7061D06347F00231827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE2E7041D06347F00231827 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		7C1712461D0D14A000A80950 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		7C1712481D0D152C00A80950 /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		7CC800651D0FA2140039DA16 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7CC800671D1041390039DA16 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		7CC800681D1041390039DA16 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		7CE2E6FD1D06347F00231827 /* ProtoTumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtoTumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE2E7001D06347F00231827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CE2E7021D06347F00231827 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				7CE2E7021D06347F00231827 /* ViewController.swift */,
 				7CE2E7041D06347F00231827 /* Main.storyboard */,
 				7C1712481D0D152C00A80950 /* TrendingViewController.swift */,
+				7CC800671D1041390039DA16 /* BaseTransition.swift */,
+				7CC800681D1041390039DA16 /* FadeTransition.swift */,
 				7C1712461D0D14A000A80950 /* AccountViewController.swift */,
 				7C1712441D0D117D00A80950 /* ComposeViewController.swift */,
 				7C1712421D0D112100A80950 /* SearchViewController.swift */,
@@ -278,10 +284,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CC800661D0FA2140039DA16 /* LoginViewController.swift in Sources */,
+				7CC800691D1041390039DA16 /* BaseTransition.swift in Sources */,
 				7C1712431D0D112100A80950 /* SearchViewController.swift in Sources */,
 				7C1712491D0D152C00A80950 /* TrendingViewController.swift in Sources */,
 				7CE2E7031D06347F00231827 /* ViewController.swift in Sources */,
 				7C1712471D0D14A000A80950 /* AccountViewController.swift in Sources */,
+				7CC8006A1D1041390039DA16 /* FadeTransition.swift in Sources */,
 				7C17123F1D0CE8D200A80950 /* TabBarViewController.swift in Sources */,
 				7C1712451D0D117D00A80950 /* ComposeViewController.swift in Sources */,
 				7CE2E7011D06347F00231827 /* AppDelegate.swift in Sources */,

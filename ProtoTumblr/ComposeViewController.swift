@@ -19,6 +19,9 @@ class ComposeViewController: UIViewController {
     @IBOutlet weak var videoButtonView: UIImageView!
     
     var buttonGroupViewInitialCenter: CGPoint!
+    var textButtonInitialCenter: CGPoint!
+    
+    var fadeTransition: FadeTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +45,16 @@ class ComposeViewController: UIViewController {
             self.buttonGroupView.center = self.buttonGroupViewInitialCenter
             
             }, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let destinationViewController = segue.destinationViewController
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        fadeTransition = FadeTransition()
+        destinationViewController.transitioningDelegate = fadeTransition
+        fadeTransition.duration = 1.0
+        
     }
 
     @IBAction func didPressCancelButton(sender: UIButton) {
