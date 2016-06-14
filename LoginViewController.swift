@@ -10,12 +10,19 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var cancelButton: UIButton!
+    var fadeTransition: FadeTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        emailTextField.becomeFirstResponder()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +35,17 @@ class LoginViewController: UIViewController {
         
         dismissViewControllerAnimated(true, completion: nil)
         
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let destinationViewController = segue.destinationViewController
+        
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+
+        fadeTransition = FadeTransition()
+        destinationViewController.transitioningDelegate = fadeTransition
+        fadeTransition.duration = 1.0
     }
     /*
     // MARK: - Navigation

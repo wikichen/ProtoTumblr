@@ -17,13 +17,13 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MHt-hy-Asa">
-                                        <rect key="frame" x="22" y="5" width="35" height="35"/>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aBQ-2E-q4z">
+                                        <rect key="frame" x="263" y="4" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="home_icon"/>
-                                        <state key="selected" image="home_selected_icon"/>
+                                        <state key="normal" image="trending_icon"/>
+                                        <state key="selected" image="trending_selected_icon"/>
                                         <connections>
-                                            <action selector="onTabBarButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5WL-XY-7dI"/>
+                                            <action selector="onTabBarButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JXT-S6-Cqy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fMY-62-6i1">
@@ -33,15 +33,6 @@
                                         <state key="selected" image="account_selected_icon"/>
                                         <connections>
                                             <action selector="onTabBarButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yaZ-kE-Z1c"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aBQ-2E-q4z">
-                                        <rect key="frame" x="263" y="4" width="35" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="trending_icon"/>
-                                        <state key="selected" image="trending_selected_icon"/>
-                                        <connections>
-                                            <action selector="onTabBarButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JXT-S6-Cqy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ogf-Yu-8LG">
@@ -60,6 +51,15 @@
                                         <state key="selected" image="search_selected_icon"/>
                                         <connections>
                                             <action selector="onTabBarButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSL-iM-OYH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MHt-hy-Asa">
+                                        <rect key="frame" x="22" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="home_icon"/>
+                                        <state key="selected" image="home_selected_icon"/>
+                                        <connections>
+                                            <action selector="onTabBarButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5WL-XY-7dI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -274,21 +274,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_form" id="plW-WJ-tkc">
-                                <rect key="frame" x="10" y="218" width="300" height="132"/>
+                                <rect key="frame" x="10" y="136" width="300" height="132"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="smX-mb-okt">
-                                <rect key="frame" x="10" y="307" width="146" height="43"/>
+                                <rect key="frame" x="10" y="225" width="146" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="didPressButton:" destination="TuT-6u-VHu" eventType="touchUpInside" id="ECK-C7-Ik6"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" id="bwe-t4-J2I">
+                                <rect key="frame" x="20" y="145" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" id="3Q5-rj-66O">
+                                        <rect key="frame" x="7" y="-1" width="274" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.20784313725490194" green="0.27843137254901962" blue="0.36078431372549019" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.20784313725490194" green="0.27843137254901962" blue="0.36078431372549019" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="smX-mb-okt" id="0pI-hx-a3H"/>
+                        <outlet property="emailTextField" destination="3Q5-rj-66O" id="115-Rh-fVu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Od5-ct-Z7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
